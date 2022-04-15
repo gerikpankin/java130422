@@ -2,7 +2,9 @@ package ru.gb.pankin.homework2;
 
 public class HomeWorkApp1 {
     public static void main(String[] args) {
-        within10and20(11, 6);
+        boolean b = within10and20(11, 6);
+        System.out.println(b);
+        //isPositiveOrNegative(4);
     }
     public static boolean within10and20(int x1, int x2) {
         boolean a;
@@ -11,10 +13,8 @@ public class HomeWorkApp1 {
             a = true;}
         else {
             a = false;}
-        System.out.println(a);
         return a;
-
     }
-
+    //public static void isPositiveOrNegative(int x);
 
 }
