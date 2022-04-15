@@ -8,6 +8,8 @@ public class HomeWorkApp1 {
         isNegative(-5);
         System.out.println(isNegative(-5));
         printWordNTimes("vocabulary", 4);
+        ifLeapYear(2022);
+        System.out.println(ifLeapYear(2022));
     }
 
     public static boolean within10and20(int x1, int x2) {
@@ -42,5 +44,18 @@ public class HomeWorkApp1 {
         for (i = 1; i <= times; i++ ) {
             System.out.println(word);
         }
+    }
+    public static boolean ifLeapYear(int x){
+        boolean a = false;
+        if (x % 4 == 0){
+            a = true;
+        }
+        if (x % 100 ==0){
+            a = false;
+        }
+        if (x % 400 ==0){
+            a = true;
+        }
+        return a;
     }
 }
