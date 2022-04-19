@@ -8,6 +8,9 @@ public class Homework3 {
         fillArray();
         changeArray();
         fillDiagonal();
+        doTask5(4, 5);
+        doTask6(new int[] {5, 10, 15, 20});
+
     }
 
     public static void invertArray() {
@@ -51,6 +54,30 @@ public class Homework3 {
         System.out.println(Arrays.deepToString(matrix));
         for (int i = 0; i < 4; i++)
             System.out.println(Arrays.toString(matrix[i]));
+    }
+    public static void doTask5(int len, int initialValue){
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = initialValue;
+            System.out.print("[" + i + "]" + arr[i] + " ");
+        }
+    }
+    public static void doTask6(int[] arr){
+        int max = arr[0];
+        int min = arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println(max);
+        System.out.println(min);
     }
 }
 
